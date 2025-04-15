@@ -3,108 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electronics Dissection: Onn Mini Rugged Speaker</title>
+    <title>Onn Mini Rugged Speaker Dissection</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Electronics Dissection: Onn Mini Rugged Speaker</h1>
+        <h1>Onn Mini Rugged Speaker Dissection</h1>
         <p>By Cody Swann</p>
-        <p>Welcome to my in-depth dissection and analysis of the Onn Mini Rugged Speaker! This web page covers all aspects of my work, from product breakdown to detailed component analysis.</p>
     </header>
-
+    
     <nav>
         <ul>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#product-market">Product Market</a></li>
-            <li><a href="#dissection-journal">Dissection Journal</a></li>
-            <li><a href="#product-operation">Product Operation</a></li>
-            <li><a href="#analysis">Product Analysis</a></li>
-            <li><a href="#reassembly">Reassembly</a></li>
-            <li><a href="#lessons-learned">Lessons Learned</a></li>
-            <li><a href="#download">Download</a></li>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#dissection">Dissection Process</a></li>
+            <li><a href="#components">Components</a></li>
+            <li><a href="#chips">Chips and Components Analysis</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#download">Download Report</a></li>
         </ul>
     </nav>
 
-    <section id="introduction">
-        <h2>1. Introduction</h2>
-        <p>In this project, I dissected the Onn Mini Rugged Speaker, which is a battery-powered Bluetooth speaker. I chose this product because it is compact, affordable, and contains both digital electronics and a Bluetooth chip.</p>
-    </section>
+    <main>
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>This is a detailed report on the dissection of the Onn Mini Rugged Speaker. The goal of this project was to identify the key components and their functions, explore the construction, and estimate the overall cost of the device.</p>
+        </section>
 
-<section id="product-market">
-    <h2>2. Product Market and Retail Information</h2>
-    <p><strong>Price: $10 (Walmart)</strong></p>
-    <p>The speaker is available at Walmart for $10, offering a great value for the features it provides.</p>
-    <!-- Add images or more info here -->
-</section>
+        <section id="dissection">
+            <h2>Dissection Process</h2>
+            <p>The dissection of the Onn Mini Rugged Speaker involved opening the casing, removing internal components, and documenting each piece. The goal was to understand the physical construction and organization of components inside the speaker.</p>
+            <img src="images/dissection_step1.jpg" alt="Opening the speaker">
+            <img src="images/dissection_step2.jpg" alt="Removing internal components">
+        </section>
 
+        <section id="components">
+            <h2>Components</h2>
+            <ul>
+                <li>Resistors</li>
+                <li>Capacitors</li>
+                <li>Chips (Microcontroller, Audio Amplifier, Bluetooth Module, etc.)</li>
+                <li>Speaker</li>
+            </ul>
+        </section>
 
-    <section id="dissection-journal">
-        <h2>3. Dissection Photo Journal</h2>
-        <p>Here, I will include step-by-step photos of the dissection process. These photos will show how the speaker is broken down and analyzed.</p>
-        <!-- Add your photos here -->
-    </section>
+        <section id="chips">
+            <h2>Chips and Components Analysis</h2>
+            <h3>IP4056 - Battery Charger Chip</h3>
+            <p>This chip is used to manage the charging process for the speaker's battery. It is crucial for maintaining battery health and ensuring safe charging.</p>
+            <h3>LTK5302 - High-Quality Audio Amplifier Chip</h3>
+            <p>The LTK5302 is the audio amplifier used to drive the speaker. It ensures high-quality sound output and optimal power usage.</p>
+            <h3>ATS2853 - Bluetooth Chip</h3>
+            <p>The ATS2853 is responsible for Bluetooth connectivity, enabling wireless communication between the speaker and other devices.</p>
+        </section>
 
-    <section id="product-operation">
-        <h2>4. Product Operation</h2>
-        <p>The speaker’s operation involves the following subsystems:</p>
-        <ul>
-            <li>Power Management (Charging and Battery)</li>
-            <li>Audio Amplification</li>
-            <li>Bluetooth Connectivity</li>
-        </ul>
-    </section>
+        <section id="pricing">
+            <h2>Pricing</h2>
+            <p>The Onn Mini Rugged Speaker is priced at $10 at Walmart. This low price is an indicator of the cost-effective components used in the design.</p>
+        </section>
 
-    <section id="analysis">
-        <h2>5. Product Analysis</h2>
-        <p>Here’s an analysis of the key components of the Onn Mini Rugged Speaker:</p>
-
-        <h3>Key Chips on PCB</h3>
-        <ul>
-            <li><strong>IP4056</strong>: Battery Charger Chip (16 resistors/capacitors)</li>
-            <li><strong>LTK5302</strong>: High-Quality Audio Amplifier Chip (18 resistors/capacitors)</li>
-            <li><strong>ATS2853</strong>: Bluetooth Chip (24 resistors/capacitors)</li>
-        </ul>
-
-        <h3>Resistor of Interest</h3>
-        <p>The <strong>4R7</strong> resistor is a key component. It is present in the following areas:</p>
-        <ul>
-            <li>16 resistors/capacitors next to the IP4056 Battery Charger Chip</li>
-            <li>18 resistors/capacitors in the LTK5302 zone</li>
-            <li>24 resistors/capacitors in the ATS2853 Bluetooth chip zone</li>
-        </ul>
-        <p>Let's estimate the cost:</p>
-        <ul>
-            <li>Cost of 4R7 resistor: $0.10 each (estimated)</li>
-            <li>Total for all resistors (58 resistors total): $5.80</li>
-        </ul>
-
-        <h3>Additional Notes:</h3>
-        <ul>
-            <li>Three prong component: <strong>Transistor</strong></li>
-            <li>Black components: <strong>Resistors</strong></li>
-            <li>Brown components: <strong>Capacitors</strong></li>
-        </ul>
-    </section>
-
-    <section id="reassembly">
-        <h2>6. Product Reassembly</h2>
-        <p>This section will provide a reassembly guide to ensure the product is put back together correctly after dissection.</p>
-    </section>
-
-    <section id="lessons-learned">
-        <h2>7. Lessons Learned</h2>
-        <p>In this section, I'll discuss the challenges faced during the dissection, what I learned about electronics, and how this knowledge can be applied in future projects.</p>
-    </section>
-
-    <section id="download">
-        <h2>Download the Dissection Report</h2>
-        <p>You can download the full report of this dissection, complete with images and detailed analysis, by clicking the link below:</p>
-        <a href="example.html" download="Onn_Mini_Rugged_Speaker_Dissection_Report.html" class="download-button">Download Dissection Report</a>
-    </section>
+        <section id="download">
+            <h2>Download Report</h2>
+            <a href="Onn_Mini_Rugged_Speaker_Report.zip" download class="download-button">Download Dissection Report</a>
+        </section>
+    </main>
 
     <footer>
-        <p>Created by Cody Swann for Electronics Dissection Project - ECE 4724/6724</p>
+        <p>Onn Mini Rugged Speaker Dissection Report | 2025 | By Cody Swann</p>
     </footer>
 </body>
 </html>
