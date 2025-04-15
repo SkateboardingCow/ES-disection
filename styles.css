@@ -8,19 +8,21 @@
 /* Body Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #eaf1f3;
     color: #333;
     line-height: 1.6;
-    padding: 20px; /* Added padding to provide space from edges */
+    padding: 40px 20px; /* Added padding to provide space from edges */
+    margin: 0;
 }
 
 /* Header Styles */
 header {
-    background-color: #2a3d4b;
+    background-color: #2980b9; /* Vibrant Blue */
     color: white;
     padding: 40px;
     text-align: center;
-    margin-bottom: 20px; /* Added margin to separate header from content */
+    margin-bottom: 30px; /* Added margin to separate header from content */
+    border-radius: 10px;
 }
 
 header h1 {
@@ -35,7 +37,7 @@ header p {
 
 /* Navigation Bar Styles */
 nav {
-    background-color: #333;
+    background-color: #3498db; /* Lighter Blue */
 }
 
 nav ul {
@@ -59,17 +61,18 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #f4a261;
+    background-color: #f39c12; /* Orange color */
     border-radius: 5px;
 }
 
 /* Main Section Styles */
 main {
     padding: 20px;
-    margin-top: 20px; /* Added margin to separate content from header */
+    margin-top: 30px; /* Added margin to separate content from header */
     background-color: white;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for a modern look */
+    margin-bottom: 50px; /* Ensures space for footer */
 }
 
 /* Section Styles */
@@ -78,11 +81,10 @@ section {
 }
 
 h2 {
-    color: #333;
+    color: #2980b9; /* Blue color for subheaders */
     font-size: 2em;
     margin-bottom: 10px;
     font-weight: bold;
-    color: #2a3d4b; /* Color update */
 }
 
 /* Image Styles */
@@ -103,7 +105,7 @@ img:hover {
 /* Button Styles */
 .download-button {
     display: inline-block;
-    background-color: #2a3d4b;
+    background-color: #27ae60; /* Green button */
     color: white;
     padding: 12px 25px;
     font-size: 1.1em;
@@ -111,20 +113,23 @@ img:hover {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    margin-top: 20px;
 }
 
 .download-button:hover {
-    background-color: #f4a261;
+    background-color: #2ecc71; /* Lighter Green on hover */
 }
 
+/* Footer Styles */
 footer {
-    background-color: #333;
+    background-color: #34495e;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     position: fixed;
     width: 100%;
     bottom: 0;
+    margin-top: 30px; /* Added margin to ensure the footer doesn’t overlap the content */
 }
 
 /* Additional Styling for Lists */
@@ -133,13 +138,32 @@ ul {
     padding-left: 20px;
 }
 
+/* Add spacing for text */
+p, ul, li {
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
 /* Quick Links Styling */
 nav ul li a {
     font-size: 1.1em;
 }
 
-/* Add spacing for text */
-p, ul, li {
-    margin-bottom: 20px;
-    padding-left: 10px; /* Padding to prevent text from being right up against the margin */
+/* Content Margin Fix */
+main {
+    margin: 0 auto;
+    max-width: 1200px; /* Prevents content from stretching too wide */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+/* Additional Styling for Images and Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f39c12;
 }
