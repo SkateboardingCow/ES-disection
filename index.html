@@ -1,56 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Download My File</title>
-  <style>
-    body {
-      background: linear-gradient(to bottom right, #1e3c72, #2a5298);
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
-      text-align: center;
-      padding: 100px 20px;
-    }
-
-    h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1.2em;
-      margin-bottom: 40px;
-    }
-
-    a.download-button {
-      background-color: #00c6ff;
-      background-image: linear-gradient(to right, #0072ff, #00c6ff);
-      color: white;
-      padding: 15px 30px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-size: 1.2em;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    a.download-button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    }
-
-    footer {
-      margin-top: 60px;
-      font-size: 0.9em;
-      color: #ccc;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onn Mini Rugged Speaker Dissection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            background-color: #444;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+            margin-bottom: 10px;
+        }
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .photo-gallery img {
+            width: 45%;
+        }
+        .content-section {
+            padding: 20px;
+            margin: 20px 0;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .quick-links {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        .quick-links a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        .quick-links a:hover {
+            background-color: #575757;
+        }
+    </style>
 </head>
 <body>
-  <h1>Welcome!</h1>
-  <p>Click the button below to download my HTML file.</p>
-  <a href="example.html" download class="download-button">Download HTML File</a>
-  <footer>
-    <p>&copy; 2025 Cody Swann | Powered by GitHub Pages</p>
-  </footer>
+
+    <header>
+        <h1>Onn Mini Rugged Speaker Dissection</h1>
+        <p>Detailed analysis, photos, and breakdown of each component</p>
+    </header>
+
+    <nav>
+        <a href="#intro">Introduction</a>
+        <a href="#market">Market Info</a>
+        <a href="#dissection">Dissection Photo Journal</a>
+        <a href="#operation">Product Operation</a>
+        <a href="#analysis">Product Analysis</a>
+        <a href="#reassembly">Reassembly</a>
+        <a href="#lessons">Lessons Learned</a>
+    </nav>
+
+    <div class="container">
+        <section id="intro" class="content-section">
+            <h2>1. Introduction</h2>
+            <p>Here, provide your personal introduction and background, as well as the motivation behind choosing the Onn Mini Rugged Speaker for dissection.</p>
+            <p><strong>Why I chose this product:</strong> [Your reason for choosing the product]</p>
+        </section>
+
+        <section id="market" class="content-section">
+            <h2>2. Product Market and Retail Information</h2>
+            <p>Provide a history of the Onn Mini Rugged Speaker, including MSRP, street prices, and retail outlets. Add any rebranded or OEM versions if applicable.</p>
+        </section>
+
+        <section id="dissection" class="content-section">
+            <h2>3. Dissection Photo Journal</h2>
+            <div class="photo-gallery">
+                <img src="photo1.jpg" alt="Photo 1">
+                <img src="photo2.jpg" alt="Photo 2">
+                <!-- Add more photos as you progress with the dissection -->
+            </div>
+            <p>Here, provide details of each step of the dissection process. Include the process of disassembling and identifying components with corresponding images.</p>
+        </section>
+
+        <section id="operation" class="content-section">
+            <h2>4. Product Operation</h2>
+            <p>Discuss the human-machine interfaces and the operation modes. Provide timing diagrams for product operation.</p>
+        </section>
+
+        <section id="analysis" class="content-section">
+            <h2>5. Product Analysis</h2>
+            <p>Include high-level design diagrams and detailed block diagrams for electronic systems. Present the electrical BoM and provide expected and extreme values for voltage, current, and power consumption.</p>
+        </section>
+
+        <section id="reassembly" class="content-section">
+            <h2>6. Product Reassembly</h2>
+            <p>Explain the reassembly process. Ensure the product works as it did originally after reassembly.</p>
+        </section>
+
+        <section id="lessons" class="content-section">
+            <h2>7. Lessons Learned</h2>
+            <p>Reflect on what you've learned during the dissection process, and how it will influence future product designs or analyses.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>Onn Mini Rugged Speaker Dissection Report | Created by [Your Name]</p>
+    </footer>
+
+    <div class="quick-links">
+        <a href="#intro">Back to Introduction</a>
+        <a href="#market">Back to Market Info</a>
+        <a href="#dissection">Back to Dissection</a>
+        <a href="#operation">Back to Operation</a>
+        <a href="#analysis">Back to Analysis</a>
+        <a href="#reassembly">Back to Reassembly</a>
+        <a href="#lessons">Back to Lessons Learned</a>
+    </div>
+
 </body>
 </html>
