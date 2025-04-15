@@ -3,162 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onn Mini Rugged Speaker Dissection</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 15px 0;
-            text-align: center;
-        }
-        nav {
-            text-align: center;
-            background-color: #444;
-            padding: 10px 0;
-        }
-        nav a {
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        nav a:hover {
-            background-color: #575757;
-        }
-        .container {
-            padding: 20px;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border: 2px solid #ddd;
-            margin-bottom: 10px;
-        }
-        .photo-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-        .photo-gallery img {
-            width: 45%;
-        }
-        .content-section {
-            padding: 20px;
-            margin: 20px 0;
-            background-color: white;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .quick-links {
-            background-color: #444;
-            padding: 10px;
-            text-align: center;
-        }
-        .quick-links a {
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-        }
-        .quick-links a:hover {
-            background-color: #575757;
-        }
-    </style>
+    <title>Electronics Dissection: Onn Mini Rugged Speaker</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header>
-        <h1>Onn Mini Rugged Speaker Dissection</h1>
-        <p>Detailed analysis, photos, and breakdown of each component</p>
+        <h1>Electronics Dissection: Onn Mini Rugged Speaker</h1>
+        <p>By Cody Swann</p>
+        <p>Welcome to my in-depth dissection and analysis of the Onn Mini Rugged Speaker! This web page covers all aspects of my work, from product breakdown to detailed component analysis.</p>
     </header>
 
     <nav>
-        <a href="#intro">Introduction</a>
-        <a href="#market">Market Info</a>
-        <a href="#dissection">Dissection Photo Journal</a>
-        <a href="#operation">Product Operation</a>
-        <a href="#analysis">Product Analysis</a>
-        <a href="#reassembly">Reassembly</a>
-        <a href="#lessons">Lessons Learned</a>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#product-market">Product Market</a></li>
+            <li><a href="#dissection-journal">Dissection Journal</a></li>
+            <li><a href="#product-operation">Product Operation</a></li>
+            <li><a href="#analysis">Product Analysis</a></li>
+            <li><a href="#reassembly">Reassembly</a></li>
+            <li><a href="#lessons-learned">Lessons Learned</a></li>
+            <li><a href="#download">Download</a></li>
+        </ul>
     </nav>
 
-    <div class="container">
-        <section id="intro" class="content-section">
-            <h2>1. Introduction</h2>
-            <p>Here, provide your personal introduction and background, as well as the motivation behind choosing the Onn Mini Rugged Speaker for dissection.</p>
-            <p><strong>Why I chose this product:</strong> [Your reason for choosing the product]</p>
-        </section>
+    <section id="introduction">
+        <h2>1. Introduction</h2>
+        <p>In this project, I dissected the Onn Mini Rugged Speaker, which is a battery-powered Bluetooth speaker. I chose this product because it is compact, affordable, and contains both digital electronics and a Bluetooth chip.</p>
+    </section>
 
-        <section id="market" class="content-section">
-            <h2>2. Product Market and Retail Information</h2>
-            <p>Provide a history of the Onn Mini Rugged Speaker, including MSRP, street prices, and retail outlets. Add any rebranded or OEM versions if applicable.</p>
-        </section>
+    <section id="product-market">
+        <h2>2. Product Market and Retail Information</h2>
+        <p>Product history, MSRP, and vendor details will be discussed here.</p>
+        <p><strong>Retail price:</strong> $14.99</p>
+    </section>
 
-        <section id="dissection" class="content-section">
-            <h2>3. Dissection Photo Journal</h2>
-            <div class="photo-gallery">
-                <img src="photo1.jpg" alt="Photo 1">
-                <img src="photo2.jpg" alt="Photo 2">
-                <!-- Add more photos as you progress with the dissection -->
-            </div>
-            <p>Here, provide details of each step of the dissection process. Include the process of disassembling and identifying components with corresponding images.</p>
-        </section>
+    <section id="dissection-journal">
+        <h2>3. Dissection Photo Journal</h2>
+        <p>Here, I will include step-by-step photos of the dissection process. These photos will show how the speaker is broken down and analyzed.</p>
+        <!-- Add your photos here -->
+    </section>
 
-        <section id="operation" class="content-section">
-            <h2>4. Product Operation</h2>
-            <p>Discuss the human-machine interfaces and the operation modes. Provide timing diagrams for product operation.</p>
-        </section>
+    <section id="product-operation">
+        <h2>4. Product Operation</h2>
+        <p>The speaker’s operation involves the following subsystems:</p>
+        <ul>
+            <li>Power Management (Charging and Battery)</li>
+            <li>Audio Amplification</li>
+            <li>Bluetooth Connectivity</li>
+        </ul>
+    </section>
 
-        <section id="analysis" class="content-section">
-            <h2>5. Product Analysis</h2>
-            <p>Include high-level design diagrams and detailed block diagrams for electronic systems. Present the electrical BoM and provide expected and extreme values for voltage, current, and power consumption.</p>
-        </section>
+    <section id="analysis">
+        <h2>5. Product Analysis</h2>
+        <p>Here’s an analysis of the key components of the Onn Mini Rugged Speaker:</p>
 
-        <section id="reassembly" class="content-section">
-            <h2>6. Product Reassembly</h2>
-            <p>Explain the reassembly process. Ensure the product works as it did originally after reassembly.</p>
-        </section>
+        <h3>Key Chips on PCB</h3>
+        <ul>
+            <li><strong>IP4056</strong>: Battery Charger Chip (16 resistors/capacitors)</li>
+            <li><strong>LTK5302</strong>: High-Quality Audio Amplifier Chip (18 resistors/capacitors)</li>
+            <li><strong>ATS2853</strong>: Bluetooth Chip (24 resistors/capacitors)</li>
+        </ul>
 
-        <section id="lessons" class="content-section">
-            <h2>7. Lessons Learned</h2>
-            <p>Reflect on what you've learned during the dissection process, and how it will influence future product designs or analyses.</p>
-        </section>
-    </div>
+        <h3>Resistor of Interest</h3>
+        <p>The <strong>4R7</strong> resistor is a key component. It is present in the following areas:</p>
+        <ul>
+            <li>16 resistors/capacitors next to the IP4056 Battery Charger Chip</li>
+            <li>18 resistors/capacitors in the LTK5302 zone</li>
+            <li>24 resistors/capacitors in the ATS2853 Bluetooth chip zone</li>
+        </ul>
+        <p>Let's estimate the cost:</p>
+        <ul>
+            <li>Cost of 4R7 resistor: $0.10 each (estimated)</li>
+            <li>Total for all resistors (58 resistors total): $5.80</li>
+        </ul>
+
+        <h3>Additional Notes:</h3>
+        <ul>
+            <li>Three prong component: <strong>Transistor</strong></li>
+            <li>Black components: <strong>Resistors</strong></li>
+            <li>Brown components: <strong>Capacitors</strong></li>
+        </ul>
+    </section>
+
+    <section id="reassembly">
+        <h2>6. Product Reassembly</h2>
+        <p>This section will provide a reassembly guide to ensure the product is put back together correctly after dissection.</p>
+    </section>
+
+    <section id="lessons-learned">
+        <h2>7. Lessons Learned</h2>
+        <p>In this section, I'll discuss the challenges faced during the dissection, what I learned about electronics, and how this knowledge can be applied in future projects.</p>
+    </section>
+
+    <section id="download">
+        <h2>Download the Dissection Report</h2>
+        <p>You can download the full report of this dissection, complete with images and detailed analysis, by clicking the link below:</p>
+        <a href="example.html" download="Onn_Mini_Rugged_Speaker_Dissection_Report.html" class="download-button">Download Dissection Report</a>
+    </section>
 
     <footer>
-        <p>Onn Mini Rugged Speaker Dissection Report | Created by Cody Swann </p>
+        <p>Created by Cody Swann for Electronics Dissection Project - ECE 4724/6724</p>
     </footer>
-
-    <div class="quick-links">
-        <a href="#intro">Back to Introduction</a>
-        <a href="#market">Back to Market Info</a>
-        <a href="#dissection">Back to Dissection</a>
-        <a href="#operation">Back to Operation</a>
-        <a href="#analysis">Back to Analysis</a>
-        <a href="#reassembly">Back to Reassembly</a>
-        <a href="#lessons">Back to Lessons Learned</a>
-    </div>
-
 </body>
 </html>
