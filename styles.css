@@ -11,14 +11,16 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+    padding: 20px; /* Added padding to provide space from edges */
 }
 
 /* Header Styles */
 header {
     background-color: #2a3d4b;
     color: white;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
+    margin-bottom: 20px; /* Added margin to separate header from content */
 }
 
 header h1 {
@@ -64,6 +66,10 @@ nav ul li a:hover {
 /* Main Section Styles */
 main {
     padding: 20px;
+    margin-top: 20px; /* Added margin to separate content from header */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for a modern look */
 }
 
 /* Section Styles */
@@ -76,6 +82,7 @@ h2 {
     font-size: 2em;
     margin-bottom: 10px;
     font-weight: bold;
+    color: #2a3d4b; /* Color update */
 }
 
 /* Image Styles */
@@ -129,4 +136,10 @@ ul {
 /* Quick Links Styling */
 nav ul li a {
     font-size: 1.1em;
+}
+
+/* Add spacing for text */
+p, ul, li {
+    margin-bottom: 20px;
+    padding-left: 10px; /* Padding to prevent text from being right up against the margin */
 }
