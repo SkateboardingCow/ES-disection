@@ -1,74 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onn Mini Rugged Speaker Dissection</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Onn Mini Rugged Speaker Dissection - Cody Swann</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <h1>Onn Mini Rugged Speaker Dissection</h1>
-        <p>By Cody Swann</p>
-    </header>
-    
+  <header>
+    <h1>Electronics Dissection: Onn Mini Rugged Speaker</h1>
     <nav>
-        <ul>
-            <li><a href="#overview">Overview</a></li>
-            <li><a href="#dissection">Dissection Process</a></li>
-            <li><a href="#components">Components</a></li>
-            <li><a href="#chips">Chips and Components Analysis</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#download">Download Report</a></li>
-        </ul>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#market-info">Market Info</a></li>
+        <li><a href="#photo-journal">Photo Journal</a></li>
+        <li><a href="#analysis">Analysis</a></li>
+        <li><a href="#reassembly">Reassembly</a></li>
+        <li><a href="#download">Download Report</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <main>
-        <section id="overview">
-            <h2>Overview</h2>
-            <p>This is a detailed report on the dissection of the Onn Mini Rugged Speaker. The goal of this project was to identify the key components and their functions, explore the construction, and estimate the overall cost of the device.</p>
-        </section>
+  <main>
+    <section id="introduction">
+      <h2>1. Introduction</h2>
+      <p>Hello, I’m <strong>Cody Swann</strong>, and I chose the Onn Mini Rugged Speaker for this dissection due to its portable design and mix of analog and digital components.</p>
+    </section>
 
-        <section id="dissection">
-            <h2>Dissection Process</h2>
-            <p>The dissection of the Onn Mini Rugged Speaker involved opening the casing, removing internal components, and documenting each piece. The goal was to understand the physical construction and organization of components inside the speaker.</p>
-            <img src="images/dissection_step1.jpg" alt="Opening the speaker">
-            <img src="images/dissection_step2.jpg" alt="Removing internal components">
-        </section>
+    <section id="market-info">
+      <h2>2. Product Market and Retail Information</h2>
+      <p>The Onn Mini Rugged Speaker is sold at <strong>Walmart</strong> for around <strong>$10</strong>. It is a budget-friendly, Bluetooth-enabled portable speaker. Several variants exist, but they follow a similar internal structure.</p>
+    </section>
 
-        <section id="components">
-            <h2>Components</h2>
-            <ul>
-                <li>Resistors</li>
-                <li>Capacitors</li>
-                <li>Chips (Microcontroller, Audio Amplifier, Bluetooth Module, etc.)</li>
-                <li>Speaker</li>
-            </ul>
-        </section>
+    <section id="photo-journal">
+      <h2>3. Dissection Photo Journal</h2>
+      <p>Photos will be displayed here. Add your image files to the same folder and use code like:</p>
+      <img src="images/speaker_front.jpg" alt="Speaker Front View" />
+      <img src="images/pcb_closeup.jpg" alt="PCB Close-Up" />
+    </section>
 
-        <section id="chips">
-            <h2>Chips and Components Analysis</h2>
-            <h3>IP4056 - Battery Charger Chip</h3>
-            <p>This chip is used to manage the charging process for the speaker's battery. It is crucial for maintaining battery health and ensuring safe charging.</p>
-            <h3>LTK5302 - High-Quality Audio Amplifier Chip</h3>
-            <p>The LTK5302 is the audio amplifier used to drive the speaker. It ensures high-quality sound output and optimal power usage.</p>
-            <h3>ATS2853 - Bluetooth Chip</h3>
-            <p>The ATS2853 is responsible for Bluetooth connectivity, enabling wireless communication between the speaker and other devices.</p>
-        </section>
+    <section id="analysis">
+      <h2>4 & 5. Product Operation and Analysis</h2>
+      <h3>Notable Chips on the PCB:</h3>
+      <ul>
+        <li><strong>IP4056:</strong> Battery Charging Chip with ~16 nearby resistors/capacitors</li>
+        <li><strong>LTK5302:</strong> High-Quality Audio Amplifier with ~18 passives</li>
+        <li><strong>ATS2853:</strong> Bluetooth Chip with ~24 passives</li>
+      </ul>
+      <p><strong>Resistor 4R7:</strong> Found near amplifier section. Based on common prices (~$0.05), total cost for 58 resistors: ~$2.90</p>
+      <p>Three-prong component identified as a transistor. Black components are resistors; brown ones are capacitors.</p>
+    </section>
 
-        <section id="pricing">
-            <h2>Pricing</h2>
-            <p>The Onn Mini Rugged Speaker is priced at $10 at Walmart. This low price is an indicator of the cost-effective components used in the design.</p>
-        </section>
+    <section id="reassembly">
+      <h2>6. Reassembly</h2>
+      <p>The speaker was successfully reassembled and functions as before. This demonstrates the importance of detailed photo tracking during disassembly.</p>
+    </section>
 
-        <section id="download">
-            <h2>Download Report</h2>
-            <a href="Onn_Mini_Rugged_Speaker_Report.zip" download class="download-button">Download Dissection Report</a>
-        </section>
-    </main>
+    <section id="download">
+      <h2>7. Download Report</h2>
+      <p>You can download the full report including diagrams and all photos:</p>
+      <a href="Onn_Mini_Rugged_Speaker_Report.zip" class="download-button" download>📥 Download Dissection Report</a>
+    </section>
+  </main>
 
-    <footer>
-        <p>Onn Mini Rugged Speaker Dissection Report | 2025 | By Cody Swann</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Cody Swann | Embedded Systems - Electronics Dissection</p>
+  </footer>
 </body>
 </html>
