@@ -2,11 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Download Page</title>
+  <title>Download My File</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #1e3c72, #2a5298);
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+    }
+
+    a.download-button {
+      background-color: #00c6ff;
+      background-image: linear-gradient(to right, #0072ff, #00c6ff);
+      color: white;
+      padding: 15px 30px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 1.2em;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    a.download-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to My Download Page</h1>
-  <p>Click below to download the HTML file:</p>
-  <a href="example.html" download>Download example.html</a>
+  <h1>Welcome!</h1>
+  <p>Click the button below to download my HTML file.</p>
+  <a href="example.html" download class="download-button">Download HTML File</a>
+  <footer>
+    <p>&copy; 2025 Your Name | Powered by GitHub Pages</p>
+  </footer>
 </body>
 </html>
