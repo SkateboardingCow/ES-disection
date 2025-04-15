@@ -1,169 +1,79 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #eaf1f3;
-    color: #333;
-    line-height: 1.6;
-    padding: 40px 20px; /* Added padding to provide space from edges */
-    margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+  color: #222;
 }
 
-/* Header Styles */
 header {
-    background-color: #2980b9; /* Vibrant Blue */
-    color: white;
-    padding: 40px;
-    text-align: center;
-    margin-bottom: 30px; /* Added margin to separate header from content */
-    border-radius: 10px;
+  background: linear-gradient(135deg, #2a2a72, #009ffd);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
 }
 
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 15px;
 }
 
-header p {
-    font-size: 1.2em;
-    margin: 5px 0;
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
 }
 
-/* Navigation Bar Styles */
-nav {
-    background-color: #3498db; /* Lighter Blue */
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
-    padding: 10px;
-    transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: #f39c12; /* Orange color */
-    border-radius: 5px;
-}
-
-/* Main Section Styles */
 main {
-    padding: 20px;
-    margin-top: 30px; /* Added margin to separate content from header */
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for a modern look */
-    margin-bottom: 50px; /* Ensures space for footer */
+  padding: 40px 60px;
+  background-color: #ffffff;
 }
 
-/* Section Styles */
 section {
-    margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
-h2 {
-    color: #2980b9; /* Blue color for subheaders */
-    font-size: 2em;
-    margin-bottom: 10px;
-    font-weight: bold;
+h1, h2, h3 {
+  color: #2a2a72;
 }
 
-/* Image Styles */
+ul {
+  list-style-type: disc;
+  padding-left: 25px;
+}
+
 img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 10px;
-    border: 3px solid #ddd;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-img:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Button Styles */
 .download-button {
-    display: inline-block;
-    background-color: #27ae60; /* Green button */
-    color: white;
-    padding: 12px 25px;
-    font-size: 1.1em;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 20px;
+  background-color: #009ffd;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
 }
 
 .download-button:hover {
-    background-color: #2ecc71; /* Lighter Green on hover */
+  background-color: #007acc;
 }
 
-/* Footer Styles */
 footer {
-    background-color: #34495e;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    margin-top: 30px; /* Added margin to ensure the footer doesn’t overlap the content */
-}
-
-/* Additional Styling for Lists */
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-/* Add spacing for text */
-p, ul, li {
-    margin-bottom: 20px;
-    padding-left: 10px;
-}
-
-/* Quick Links Styling */
-nav ul li a {
-    font-size: 1.1em;
-}
-
-/* Content Margin Fix */
-main {
-    margin: 0 auto;
-    max-width: 1200px; /* Prevents content from stretching too wide */
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-}
-
-/* Additional Styling for Images and Links */
-a {
-    color: #3498db;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #f39c12;
+  background-color: #2a2a72;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
 }
