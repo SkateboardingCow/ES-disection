@@ -1,83 +1,89 @@
+/* Global styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f8ff;
-  margin: 0;
-  padding: 0;
-  color: #222;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
 header {
-  background: linear-gradient(135deg, #2a2a72, #009ffd);
-  color: white;
-  padding: 30px 20px;
-  text-align: center;
+    background-color: #195b8d;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 header nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 20px 0 0 0;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
 }
 
 header nav ul li {
-  display: inline;
-  margin: 0 15px;
+    display: inline;
+    margin: 0 12px;
 }
 
 header nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 main {
-  padding: 40px 60px;
-  background-color: #ffffff;
-  max-width: 1000px;
-  margin: 0 auto;
+    padding: 30px 10%;
+    max-width: 1000px;
+    margin: auto;
 }
 
 section {
-  margin-bottom: 60px;
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 h1, h2, h3 {
-  color: #2a2a72;
+    color: #195b8d;
 }
 
 ul {
-  list-style-type: disc;
-  padding-left: 25px;
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  margin-top: 15px;
-}
-
-.download-button {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 14px 24px;
-  background-color: #009ffd;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.download-button:hover {
-  background-color: #007acc;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 footer {
-  background-color: #2a2a72;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 80px;
+    background-color: #195b8d;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    position: relative;
+    width: 100%;
+}
+
+.download-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #3093d1;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #2576a9;
 }
