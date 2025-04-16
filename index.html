@@ -3,111 +3,115 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Onn Mini Rugged Speaker Dissection – Cody Swann</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Onn Mini Rugged Speaker Dissection</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
   <header>
-    <div class="title-wrapper">
-      <h1>Onn Mini Rugged Speaker</h1>
-      <p>Electronics Dissection Project by Cody Swann</p>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#market">Product Market Info</a></li>
-        <li><a href="#photo-journal">Photo Journal</a></li>
-        <li><a href="#operation">Operation</a></li>
-        <li><a href="#analysis">Analysis</a></li>
-        <li><a href="#reassembly">Reassembly</a></li>
-        <li><a href="#lessons">Lessons Learned</a></li>
-        <li><a href="#download">Download</a></li>
-      </ul>
-    </nav>
+    <h1>Onn Mini Rugged Speaker Dissection</h1>
+    <p>By Cody Swann | Embedded Systems (ECE 4724/6724)</p>
   </header>
+
+  <nav>
+    <ul>
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#market-analysis">Market Analysis</a></li>
+      <li><a href="#photo-journal">Dissection Photo Journal</a></li>
+      <li><a href="#bill-of-materials">Bill of Materials</a></li>
+      <li><a href="#schematic">Schematic</a></li>
+      <li><a href="#analysis">Analysis</a></li>
+    </ul>
+  </nav>
 
   <main>
     <section id="introduction">
       <h2>1. Introduction</h2>
-      <p>My name is Cody Swann and I am a junior at Mississippi State University studying Computer Engineering. This is my dissection project for Embedded Systems (ECE 4724/6724).
-      <br><br>
-      I chose the Onn Mini Rugged Speaker for this assignment because of my interest in consumer electronics and how embedded systems drive their functionality. Portable Bluetooth speakers are common and often inexpensive, yet they integrate multiple systems including power management, wireless communication, and audio amplification. Dissecting this device offered me the chance to combine practical analysis with my interest in embedded design.</p>
+      <p>My name is Cody Swann and I am a junior at Mississippi State University in Computer Engineering. This is my dissection project for Embedded Systems (ECE 4724/6724).</p>
+      <p>I chose the Onn Mini Rugged Speaker as my dissection subject because of my love for audio devices and how embedded systems play a key role in making compact, portable electronics function effectively. This project combines my technical interests with hands-on exploration of real-world consumer products.</p>
     </section>
 
-    <section id="market">
-      <h2>2. Product Market and Retail Information</h2>
-      <p>
-        <strong>Product History and Company Background</strong><br>
-        Onn is Walmart's private-label electronics brand, launched to provide consumers with affordable alternatives to name-brand technology. The Onn line includes headphones, speakers, streaming devices, and other low-cost gadgets. Since its debut, Onn has grown to become a popular choice for budget-conscious shoppers looking for functional and accessible tech without premium pricing.
-        <br><br>
-        The Onn Mini Rugged Speaker is part of a broader family of Bluetooth speakers designed to be portable, durable, and water-resistant. These speakers target casual users who want a lightweight audio solution for outdoor or on-the-go use. The rugged aspect of the speaker refers to its reinforced outer shell, designed to handle drops and rough handling.
-        <br><br>
-        <strong>Retail Pricing</strong><br>
-        The speaker is primarily sold through Walmart stores and the Walmart website. Its low cost—around $10—makes it one of the most affordable Bluetooth speaker options on the market.
-        <br><br>
-        <strong>Prices from Various Retailers</strong><br>
-        <ul>
-          <li>Walmart (official source): $9.88</li>
-          <li>eBay (new condition): $7.99 – $12.50</li>
-          <li>Amazon (limited listings): ~$11.95</li>
-        </ul>
-        
-        <strong>Product Line Variations</strong><br>
-        The Onn Mini Rugged Speaker comes in a variety of colors and occasionally different form factors, but the core design remains consistent: a compact, rechargeable Bluetooth speaker with basic onboard controls. Variants may differ in battery life, button layout, or casing material, but all aim for simple wireless playback at a low cost.
-        <br><br>
-        <strong>Market Position</strong><br>
-        Onn products compete directly with other budget electronics like those from brands such as Blackweb (another Walmart line), iLive, and some Anker models. What sets Onn apart is its availability, direct association with Walmart, and extremely competitive pricing. It fills a niche for users who need short-term or entry-level tech without high performance demands.
-        <br><br>
-        Overall, the Onn Mini Rugged Speaker is an accessible and cost-effective product that showcases how embedded systems can be mass-produced for everyday use at scale.
-      </p>
+    <section id="market-analysis">
+      <h2>2. Market Analysis</h2>
+      <h3>Product History</h3>
+      <p>The Onn Mini Rugged Speaker is a product sold under Walmart’s exclusive electronics brand, Onn. Onn provides a variety of low-cost tech gadgets and accessories such as headphones, speakers, and streaming devices. The Onn brand was launched by Walmart to offer consumers affordable alternatives to higher-end electronics, and its product line continues to expand with budget-conscious buyers in mind.</p>
+      <p>The Mini Rugged Speaker is designed to be compact, durable, and water-resistant, catering to users who want a portable audio solution without breaking the bank. It typically features Bluetooth connectivity, a rechargeable battery, simple controls, and rugged rubberized housing to withstand minor drops or splashes.</p>
+
+      <h3>Where to Find the Product</h3>
+      <ul>
+        <li><a href="https://www.walmart.com" target="_blank">Walmart Product Page</a></li>
+        <li>Other third-party marketplaces such as Amazon, eBay, and Mercari occasionally carry similar models.</li>
+      </ul>
+
+      <h3>Price Comparison</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Source</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Walmart</td>
+            <td>$9.88 (New)</td>
+          </tr>
+          <tr>
+            <td>Amazon</td>
+            <td>$11.99 (Similar Model)</td>
+          </tr>
+          <tr>
+            <td>eBay</td>
+            <td>$5.00 - $10.00 (Used)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Comparable Products</h3>
+      <p>Other brands offering similar mini Bluetooth speakers include JBL Go, Anker Soundcore Mini, and Sony SRS-XB series. These tend to feature similar connectivity and ruggedness, but at a higher price point. The Onn speaker fills the budget niche with fewer frills but a surprising amount of durability and performance for the price.</p>
     </section>
 
     <section id="photo-journal">
       <h2>3. Dissection Photo Journal</h2>
-      <p>Photos and documentation of each disassembly step will be added here.</p>
+      <p>Below are the photos documenting each step of the disassembly process of the Onn Mini Rugged Speaker.</p>
+
+      <div class="photo-grid">
+        <img src="images/ES_1.jpeg" alt="Step 1">
+        <img src="images/ES_2.jpeg" alt="Step 2">
+        <img src="images/ES_3.jpeg" alt="Step 3">
+        <img src="images/ES_4.jpeg" alt="Step 4">
+        <img src="images/ES_5.jpeg" alt="Step 5">
+        <img src="images/ES_6.jpeg" alt="Step 6">
+        <img src="images/ES_7.jpeg" alt="Step 7">
+        <img src="images/ES_8.jpeg" alt="Step 8">
+        <img src="images/ES_9.jpeg" alt="Step 9">
+        <img src="images/ES_10.jpeg" alt="Step 10">
+        <img src="images/ES_11.jpeg" alt="Step 11">
+        <img src="images/ES_12.jpeg" alt="Step 12">
+        <img src="images/ES_13.jpeg" alt="Step 13">
+        <img src="images/ES_14.jpeg" alt="Step 14">
+        <img src="images/ES_15.jpeg" alt="Step 15">
+        <img src="images/ES_16.jpeg" alt="Step 16">
+      </div>
     </section>
 
-    <section id="operation">
-      <h2>4. Product Operation</h2>
-      <p>Usage modes, timing diagrams, and interface notes will go here.</p>
+    <section id="bill-of-materials">
+      <h2>4. Bill of Materials</h2>
+      <p>Coming soon...</p>
+    </section>
+
+    <section id="schematic">
+      <h2>5. Schematic</h2>
+      <p>Coming soon...</p>
     </section>
 
     <section id="analysis">
-      <h2>5. Product Analysis</h2>
-      <p>
-        - 16 resistors/capacitors near IP4056 (battery charger chip)  <br>
-        - 18 resistors/capacitors in LTK5302 zone (audio amplifier)  <br>
-        - 24 resistors/capacitors near ATS2853 (Bluetooth chip)  <br><br>
-
-        Notable components:  <br>
-        - “4R7” is a resistor  <br>
-        - The 3-prong component is a transistor  <br>
-        - Black components = resistors  <br>
-        - Brown components = capacitors  <br><br>
-
-        Example cost breakdown:  <br>
-        If one resistor costs $0.01 and there are 58 of them, the total is ~$0.58.
-      </p>
-    </section>
-
-    <section id="reassembly">
-      <h2>6. Product Reassembly</h2>
-      <p>The speaker will be reassembled and tested to confirm its original function is restored.</p>
-    </section>
-
-    <section id="lessons">
-      <h2>7. Lessons Learned</h2>
-      <p>This section will summarize what was learned through the dissection and analysis process.</p>
-    </section>
-
-    <section id="download">
-      <h2>8. Download Report</h2>
-      <a href="Onn_Mini_Rugged_Speaker_Report.zip" class="download-button" download>Download Full Report (.zip)</a>
+      <h2>6. Analysis</h2>
+      <p>Coming soon...</p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Cody Swann – ECE 4724/6724 Embedded Systems</p>
+    <p>&copy; 2025 Cody Swann | Mississippi State University</p>
   </footer>
 </body>
 </html>
