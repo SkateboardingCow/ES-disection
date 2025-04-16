@@ -16,13 +16,17 @@ header {
 header .title-wrapper h1 {
   margin: 0;
   font-size: 2.5em;
+  color: #ffffff; /* Bright white for strong contrast */
+  font-weight: 700;
 }
 
 header .title-wrapper p {
   margin: 5px 0 15px;
   font-size: 1.2em;
-  color: #d0e8ff;
+  color: #b3dcff; /* Soft blue-gray for subtle contrast */
+  font-weight: 500;
 }
+
 
 header nav ul {
   list-style: none;
