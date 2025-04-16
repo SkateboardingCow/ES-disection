@@ -3,70 +3,87 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Onn Mini Rugged Speaker Dissection - Cody Swann</title>
+  <title>Onn Mini Rugged Speaker Dissection – Cody Swann</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header>
-  <h1>Onn Mini Rugged Speaker – Electronics Dissection Project</h1>
-  <p>by Cody Swann</p>
-  <nav>
-    <ul>
-      <li><a href="#introduction">Introduction</a></li>
-      <li><a href="#market">Product Market Info</a></li>
-      <li><a href="#photo-journal">Photo Journal</a></li>
-      <li><a href="#operation">Operation</a></li>
-      <li><a href="#analysis">Analysis</a></li>
-      <li><a href="#reassembly">Reassembly</a></li>
-      <li><a href="#lessons">Lessons Learned</a></li>
-      <li><a href="#download">Download</a></li>
-    </ul>
-  </nav>
-</header>
-
+  <header>
+    <div class="title-wrapper">
+      <h1>Onn Mini Rugged Speaker</h1>
+      <p>Electronics Dissection Project by Cody Swann</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#market">Product Market Info</a></li>
+        <li><a href="#photo-journal">Photo Journal</a></li>
+        <li><a href="#operation">Operation</a></li>
+        <li><a href="#analysis">Analysis</a></li>
+        <li><a href="#reassembly">Reassembly</a></li>
+        <li><a href="#lessons">Lessons Learned</a></li>
+        <li><a href="#download">Download</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main>
     <section id="introduction">
       <h2>1. Introduction</h2>
-      <p>Hello, I’m <strong>Cody Swann</strong>, and I chose the Onn Mini Rugged Speaker for this dissection due to its portable design and mix of analog and digital components.</p>
+      <p>This project involves the full dissection and analysis of the Onn Mini Rugged Speaker...</p>
     </section>
 
-    <section id="market-info">
+    <section id="market">
       <h2>2. Product Market and Retail Information</h2>
-      <p>The Onn Mini Rugged Speaker is sold at <strong>Walmart</strong> for around <strong>$10</strong>. It is a budget-friendly, Bluetooth-enabled portable speaker with a rugged design.</p>
+      <p>Retail price: $10 (Walmart)<br>
+      The speaker is widely available in stores across the U.S., known for durability and affordability.</p>
     </section>
 
     <section id="photo-journal">
       <h2>3. Dissection Photo Journal</h2>
-      <img src="images/speaker_front.jpg" alt="Speaker Front View" />
-      <img src="images/pcb_closeup.jpg" alt="PCB Close-Up" />
+      <p>Photos and documentation of each disassembly step will be added here.</p>
+    </section>
+
+    <section id="operation">
+      <h2>4. Product Operation</h2>
+      <p>Usage modes, timing diagrams, and interface notes will go here.</p>
     </section>
 
     <section id="analysis">
-      <h2>4 & 5. Product Operation and Analysis</h2>
-      <p><strong>Notable chips on PCB:</strong></p>
-      <ul>
-        <li><strong>IP4056:</strong> Battery Charging Chip (~16 passives)</li>
-        <li><strong>LTK5302:</strong> Audio Amplifier (~18 passives)</li>
-        <li><strong>ATS2853:</strong> Bluetooth Chip (~24 passives)</li>
-      </ul>
-      <p><strong>Resistor 4R7:</strong> Found near amplifier section. 58 resistors total ≈ $2.90 (at $0.05 each).</p>
+      <h2>5. Product Analysis</h2>
+      <p>
+        - 16 resistors/capacitors near IP4056 (battery charger chip)  
+        - 18 resistors/capacitors in LTK5302 zone (audio amplifier)  
+        - 24 resistors/capacitors near ATS2853 (Bluetooth chip)  
+        <br><br>
+        Notable components:  
+        - “4R7” is a resistor  
+        - The 3-prong component is a transistor  
+        - Black components = resistors  
+        - Brown components = capacitors  
+        <br><br>
+        Example cost breakdown:  
+        If one resistor costs $0.01 and there are 58 of them, the total is ~$0.58.
+      </p>
     </section>
 
     <section id="reassembly">
-      <h2>6. Reassembly</h2>
-      <p>The speaker was successfully reassembled and still functions. Careful tracking of screws and parts was key.</p>
+      <h2>6. Product Reassembly</h2>
+      <p>The speaker will be reassembled and tested to confirm its original function is restored.</p>
+    </section>
+
+    <section id="lessons">
+      <h2>7. Lessons Learned</h2>
+      <p>This section will summarize what was learned through the dissection and analysis process.</p>
     </section>
 
     <section id="download">
-      <h2>7. Download Report</h2>
-      <p>Click below to download the full dissection report (includes photos and diagrams):</p>
-      <a href="Onn_Mini_Rugged_Speaker_Report.zip" class="download-button" download>📥 Download Report</a>
+      <h2>8. Download Report</h2>
+      <a href="Onn_Mini_Rugged_Speaker_Report.zip" class="download-button" download>Download Full Report (.zip)</a>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Cody Swann | Embedded Systems Dissection Project</p>
+    <p>&copy; 2025 Cody Swann – ECE 4724/6724 Embedded Systems</p>
   </footer>
 </body>
 </html>
