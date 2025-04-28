@@ -273,8 +273,102 @@
 
     <section id="schematic">
         <h2>Schematic</h2>
-        <p>Placeholder for the schematic diagram of the Onn Mini Rugged Speaker.</p>
-    </section>
+        <h3>Main Components</h3>
+    <table>
+        <tr>
+            <th>Component</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Battery</td>
+            <td>3.7V Lithium-Ion Rechargeable Battery</td>
+        </tr>
+        <tr>
+            <td>Speaker</td>
+            <td>Small Full-Range Speaker Driver</td>
+        </tr>
+    </table>
+
+    <h3>PCB Components</h3>
+
+    <h4>IP4056 Zone (Battery Charger Circuit)</h4>
+    <table>
+        <tr>
+            <th>Component</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td>IP4056</td>
+            <td>Battery Charging Chip</td>
+        </tr>
+        <tr>
+            <td>Capacitors</td>
+            <td>6 total (2 large, 1 medium, 3 small)</td>
+        </tr>
+        <tr>
+            <td>Resistors</td>
+            <td>1.87kΩ, 4.5kΩ, 5.4kΩ, 5.7kΩ, 5.6kΩ, 5.6kΩ, 4.5kΩ, 100Ω, 1.5kΩ</td>
+        </tr>
+        <tr>
+            <td>Transistor</td>
+            <td>1 total</td>
+        </tr>
+    </table>
+
+    <h4>LTK5302 Zone (Audio Amplifier Circuit)</h4>
+    <table>
+        <tr>
+            <th>Component</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td>LTK5302</td>
+            <td>High-Quality Audio Amplifier Chip</td>
+        </tr>
+        <tr>
+            <td>Capacitors</td>
+            <td>4 total (1 medium, 3 small)</td>
+        </tr>
+        <tr>
+            <td>Resistors</td>
+            <td>100kΩ, 160kΩ, 2Ω, 9.5kΩ, 30kΩ, 10kΩ, 450Ω, 2kΩ, 2kΩ, 75kΩ, 75kΩ, 450Ω</td>
+        </tr>
+    </table>
+
+    <h4>ATS2853 Zone (Bluetooth SoC)</h4>
+    <table>
+        <tr>
+            <th>Component</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td>ATS2853</td>
+            <td>Bluetooth Chip</td>
+        </tr>
+        <tr>
+            <td>Resistors</td>
+            <td>6kΩ, 3.57kΩ, 1kΩ, 1Ω, 6kΩ, 1kΩ</td>
+        </tr>
+        <tr>
+            <td>Capacitors</td>
+            <td>14 total (various sizes)</td>
+        </tr>
+        <tr>
+            <td>Inductor</td>
+            <td>1 total</td>
+        </tr>
+        <tr>
+            <td>Diode</td>
+            <td>1 total</td>
+        </tr>
+        <tr>
+            <td>Transistor</td>
+            <td>1 total</td>
+        </tr>
+    </table>
+
+    <p><em>Note: Some components are used across multiple zones. Values may vary slightly due to manufacturing tolerances.</em></p>
+</section>
     
     <section id="analysis">
            <h2>7. Product Analysis</h2>
